@@ -5,7 +5,7 @@ echo color("purple","              WAROENGINTERNET\n");
 echo color("white","        AUTO REGIST & CLAIM VOUCHER\n" );
 echo color("white","          ".hari_ini().date('m-Y H:i:s') ." \n\n ");
 echo color("white","            Format Nomor 62***\n");
-sleep(2);
+sleep(1);
 echo color("white","  ");
 function change(){
         $nama = nama();
@@ -119,7 +119,7 @@ function change(){
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("red","-] GAGAL!!!\n");
+         echo color("red","-]  GAGAL!\n");
          }
          }
          }
@@ -132,7 +132,7 @@ function change(){
          goto otp;
          }
          }else{
-         echo color("red","  NOMOR SUDAH TERDAFTAR/SALAH !");
+         echo color("red","  NOMOR SUDAH TERDAFTAR/SALAH");
          echo "\n  DAFTAR ULANG (y/n): ";
          $pilih = trim(fgets(STDIN));
          if($pilih == "y" || $pilih == "Y"){
