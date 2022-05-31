@@ -11,7 +11,7 @@ function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         ulang:
-        echo color("white","\n  NOMOR : ");
+        echo color("white","\n NOMOR : ");
         $no = trim(fgets(STDIN));
         $data = '{"email":"'.$email.'@gmail.com","name":"'.$nama.'","phone":"+'.$no.'","signed_up_country":"ID"}';
         $register = request("/v5/customers", null, $data);
@@ -52,8 +52,9 @@ function change(){
                 echo "\n\n".color("white","              @waroenginternet      ");
                 echo "\n".color("white","      Silahkan Masuk ke VMOS/AppClone");
                 for($a=1;$a<=3;$a++){
-                        echo color("white",".","\n");
+                        echo color("white",".");
                         sleep(2);
+                        echo "\n"
         }
         die();
         $code1 = request('/go-promotions/v1/promotions/enrollments');
