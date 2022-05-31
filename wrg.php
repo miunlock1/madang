@@ -33,6 +33,7 @@ function change(){
         echo "\n".color("green"," Claim Voucher? y/n : ");
         $pilihan = trim(fgets(STDIN));
         if($pilihan == "y" || $pilihan == "Y"){
+                //kamu kena preng wkwkwk cuman echo doang bukan claim voc beneran//
                 echo "\n".color("white","           Lagi Claim Voucher!       \n");
                 echo color("white","            (Total 8 Voucher)       \n");
                 echo "\n".color("green"," [x1] Voucher Diskon GoSend 50%*");
@@ -51,7 +52,7 @@ function change(){
                 echo "\n\n".color("white","              @waroenginternet      ");
                 echo "\n".color("white","      Silahkan Masuk ke VMOS/AppClone");
                 for($a=1;$a<=3;$a++){
-                        echo color("white",".");
+                        echo color("white",".","\n");
                         sleep(2);
         }
         die();
