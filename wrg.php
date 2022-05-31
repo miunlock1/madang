@@ -54,7 +54,7 @@ function change(){
                 for($a=1;$a<=3;$a++){
                         echo color("white",".");
                         sleep(2);
-                        echo "\n"
+                        echo "\n";
         }
         die();
         $code1 = request('/go-promotions/v1/promotions/enrollments');
